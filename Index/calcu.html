@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn input{
+        background-color: antiquewhite;
+        border-style: none;
+        border-radius: 9px;
+    }
+    .btn button{
+        width: 40px;
+        height: 35px;
+        background-color: aquamarine;
+        border-style: none;
+        border-radius: 15px;
+    }
+    .btn button:hover{
+        background-color: rgb(69, 136, 114);
+        border-style: none;
+        border-radius: 15px;
+        transition: .5s;
+        color: white;
+    }
+    .btn{
+        border: 1px solid black;
+        width: 280px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    @media (max-width: 767px) {
+        .btn{
+        border: 1px solid black;
+        margin: auto;
+        width: 280px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    }
+    .row1{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .row2{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .row3{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .row4{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .wrap{
+        padding: 150px 0 ;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <script src="../js/test.js"></script>
+    <div class="wrap">
+    <div class="btn">
+        <h3>Calculator</h3>
+        <input type="text" id="test"><br><br>
+        <div class="row1">
+            <button onclick="s()" id="bt">1</button>
+            <button onclick="i()" id="btn">2</button>
+            <button onclick="three()" id="three">3</button>
+            <button onclick="four()" id="four">4</button>
+        </div>
+        <br>
+        <div class="row2">
+            <button onclick="five()" id="five">5</button>
+            <button onclick="six()" id="six">6</button>
+            <button onclick="seven()" id="seven">7</button>
+            <button onclick="eight()" id="eight">8</button>
+        </div>
+        <br>
+        <div class="row3">
+            <button onclick="nine()" id="nine">9</button>
+            <button onclick="zero()" id="zero">0</button>
+            <button onclick="sub()" id="sub">-</button>
+            <button onclick="div()" id="div">/</button>
+           
+           
+           
+        </div>
+        <br>
+        <div class="row4">
+            <button onclick="p()" id="sum">+</button>
+            <button onclick="mul()" id="mul">*</button>
+            <button onclick="Clear()" >C</button>
+            <button onclick="e()" id="equls">=</button>
+        </div>
+        <br>
+</div></div>
+</body>
+</html>
